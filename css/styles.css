@@ -1,0 +1,289 @@
+/***********************************************************
+GENERAL
+************************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  color: #595959;
+}
+
+/***********************************************************
+COLORS
+************************************************************/
+
+header,
+#main-contact,
+footer {
+  background-color: #f9fafa;
+}
+
+#main-content {
+  background-color: white;
+}
+
+nav {
+  
+}
+
+.text {
+  color: #999999;
+  margin-right: 17px;
+}
+
+/***********************************************************
+HEADER
+************************************************************/
+header,
+#main-content,
+#main-contact,
+footer {
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+}
+
+nav li {
+  list-style-type: none;
+  display: block;
+  background-color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+nav li a,
+footer ul a,
+#more-info a {
+  text-decoration: none;
+}
+
+nav li a:visited, a:link,
+footer ul a,
+#more-info a {
+  color: #595959;
+}
+
+#main-image {
+  padding-bottom: 20px;
+}
+
+/***********************************************************
+BODY
+************************************************************/
+
+img {
+  max-width: 100%;
+}
+
+/*
+.content-boxes {
+  background-color: yellow;
+}
+*/
+
+/***********************************************************
+CONTACT & FOOTER
+************************************************************/
+
+footer h5 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+
+#main-contact {
+  border-bottom: 2px solid #e6e6e6;
+}
+
+
+/* Float Clearfix ------------------ */
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/***********************************************************
+MEDIA QUERIES
+************************************************************/
+
+@media screen and (min-width:768px) {
+  
+/*
+  body {
+    background: red;
+  }
+*/
+
+/****************************
+HEADER @768px
+****************************/
+  header h1 {
+    padding-top: 30px;
+  }
+  
+  header p {
+    width: 55%;
+    float: left;
+    padding-left: 10px;
+    margin: 0;
+  }
+  
+  #main-image {
+    width: 40%;
+    float: right;
+    padding-right: 15px;
+  }
+  
+  ul {
+    margin-bottom: 30px;
+  }
+  
+  nav li {
+    display: inline-block;
+    background-color: initial;
+  }
+  
+/********************
+BODY @768px
+***************************/
+  
+  .first-col,
+  .second-col {
+    width: 50%;
+    padding: 1em;
+  }
+  
+  .first-col {
+    float: left;
+  }
+  
+  .second-col {
+    float: right;
+  }
+  
+  #main-contact {
+    clear: both;
+  }
+   
+   
+   .hideontab {
+      display: none;
+   }
+  
+}
+  #Portfolio {
+    padding-top: 30px;
+  }
+
+/****************************
+CONTACT & FOOTER @768px
+****************************/
+
+#more-info {
+  width: 80%;
+  margin:0 auto;
+}
+
+#contact {
+    padding-top: 40px;
+  }
+
+footer {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+footer h5,
+footer li {
+  display: inline-block;
+}
+
+footer h5 {
+  float: left;
+  padding-left: 10px;
+  padding-top: 0;
+}
+
+footer ul {
+  float: right;
+  padding-right: 10px;
+  margin: 0;
+}
+
+footer li {
+  float: left;
+  margin-right: 20px;
+}
+
+
+
+/***********************************************************
+MEDIA QUERY - MAX WIDTH
+************************************************************/
+@media screen and (max-width:768px) {
+   
+ 
+.hideonmob {
+    display: none;
+}
+  
+   
+}
+
+@media screen and (min-width:1024px) {
+  
+  body {
+/*    background: orange;*/
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #header-content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  header h1 {
+    float: left;
+    margin: 0;
+    padding-top: 15px;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  #main-image {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+  }
+  
+  header p {
+    clear: both;
+    text-align: left;
+    margin-right: -5px;
+    padding-left: 0;
+  }
+  
+  nav ul {
+    margin-bottom: 20px;
+  }
+  
+  .first-col,
+  .second-col {
+    width: 33%;
+    padding: 1em;
+  }
+  
+  
+}
